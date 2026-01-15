@@ -2,8 +2,8 @@
 --caso a tabela sofra alterações durante o tempo, a query não precisará ser alterada
 --pois a subquery irá retornar a média atualizada
 SELECT *
-FROM [AdventureWorks2017].[Production].[Product]
-WHERE ListPrice > (SELECT AVG(ListPrice) AS AvgListPrice FROM [AdventureWorks2017].[Production].[Product]);
+FROM  AdventureWorks.Production.Product p 
+WHERE ListPrice > (SELECT AVG(ListPrice) AS AvgListPrice FROM AdventureWorks.Production.Product);
 
 --todos os funcionários que tem o cargo de Design Engineer
 SELECT
