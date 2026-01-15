@@ -290,8 +290,8 @@ OPTION (MAXRECURSION 366)
 SELECT TOP 10
     SalesOrderID AS OrderID
     ,SUM(OrderQty) AS TotalOrderQty
-FROM Sales.SalesOrderDetail
-WHERE OrderQty > (SELECT AVG(OrderQty) FROM SALES.SalesOrderDetail)
+FROM AdventureWorks.Sales.SalesOrderDetail
+WHERE OrderQty > (SELECT AVG(OrderQty) FROM AdventureWorks.Sales.SalesOrderDetail)
 GROUP BY SalesOrderID
 ORDER BY 2 DESC;
 
