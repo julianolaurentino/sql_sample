@@ -100,7 +100,7 @@ SELECT * FROM Hierarquia;
 WITH PedidosNumerados AS (
     SELECT CustomerID, SalesOrderID, OrderDate,
            ROW_NUMBER() OVER (PARTITION BY CustomerID ORDER BY OrderDate DESC) AS NumeroPedido
-    FROM Sales.SalesOrderHeader
+    FROM AdventureWorks.Sales.SalesOrderHeader
 )
 SELECT * 
 FROM PedidosNumerados
