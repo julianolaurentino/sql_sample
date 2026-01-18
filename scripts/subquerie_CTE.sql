@@ -262,7 +262,7 @@ WITH totalqtdsales AS (
 SELECT
     CustomerID
     ,COUNT(SalesOrderNumber) AS qtdsales
-FROM Sales.SalesOrderHeader
+FROM AdventureWorks.Sales.SalesOrderHeader
 GROUP BY CustomerID
 )
 SELECT *
