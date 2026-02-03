@@ -133,4 +133,3 @@ FROM sales.SalesOrderDetail SOD
 INNER JOIN Production.Product P ON SOD.ProductID = P.ProductID
 INNER JOIN Production.ProductSubcategory PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
 GROUP BY SOD.SalesOrderID, SOD.ProductID, SOD.OrderQty, P.Name, PS.Name, SOD.ModifiedDate
-
