@@ -57,4 +57,4 @@ FROM
     [AdventureWorks2017].PERSON.PERSON PP
 LEFT JOIN [AdventureWorks2017].[Person].EmailAddress PE
     ON PP.BusinessEntityID = PE.BusinessEntityID
-    WHERE PP.FirstName = 'Peter' AND PP.LastName = 'Krebs';
+    WHERE PP.FirstName = 'Peter' AND PP.LastName = 'Krebs'
